@@ -51,7 +51,11 @@ int main() {
             //Output is the probability of each expert in a row, depending on the number of experts based on the input.
             //The number of rows corresponds to the number of rounds/iterations.
             //With this we can see how the probabilities change over time.
-            cout << finalProbs[i][j] << " ";
+            double prob = finalProbs[i][j];
+            cout << prob;
+            if (j != finalProbs[i].size() - 1) {
+                cout << " ";
+            }
         }
         cout << endl;
     }
